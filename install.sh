@@ -3,4 +3,6 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 mv .zshrc ~/.zshrc
 sudo apt-get install python3-pip
 pip3 install virtualenv virtualenvwrapper
+git remote add dotfiles https://github.com/Equecevi/dotfiles
+
 
