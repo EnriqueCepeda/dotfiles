@@ -10,8 +10,8 @@
 export  workon_home=$HOME/.virtualenvs
 
 # default python version to use with virtualenv
-export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3.6
-export VIRTUALENVWRAPPER_VIRTUALENV_ARGS=' -p /usr/bin/python3.6 '
+export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
+export VIRTUALENVWRAPPER_VIRTUALENV_ARGS=' -p /usr/bin/python3 '
 source `which virtualenvwrapper.sh`
  
 # Set name of the theme to load --- if set to "random", it will
@@ -72,7 +72,7 @@ COMPLETION_WAITING_DOTS="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git z virtualenvwrapper virtualenv ubuntu sudo python chucknorris )
+plugins=(git z virtualenvwrapper virtualenv ubuntu sudo python)
 
 source $ZSH/oh-my-zsh.sh
 
