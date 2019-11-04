@@ -1,12 +1,13 @@
-zsh:
-	sudo apt-get install zsh git
+oh-my-zsh: 
+	sudo apt-get install zsh git 
 	#oh-my-zsh
 	git clone "https://github.com/robbyrussell/oh-my-zsh.git" ~/.oh-my-zsh
 	cp .zshrc ~/.zshrc
 	chsh -s $(which zsh)
 	exit
+zsh-extra-plugins:
 	#zsh-syntax-highlighting
-	git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH/plugins/zsh-syntax-highlighting
+	git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $(ZSH)/plugins/zsh-syntax-highlighting
 	#z tabulator
 	git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 	~/.fzf/install		
