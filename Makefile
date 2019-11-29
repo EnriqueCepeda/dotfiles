@@ -1,4 +1,4 @@
-zsh: git oh-my-zsh zsh-extra-plugins
+zsh: git oh-my-zsh zsh-extra-plugins restart-zsh-config
 
 oh-my-zsh: 
 	sudo apt-get install zsh

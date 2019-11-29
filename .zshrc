@@ -31,13 +31,13 @@ source $ZSH/oh-my-zsh.sh
 # Compilation flags
  export ARCHFLAGS="-arch x86_64"
 
-# ssh keys
+# SSH KEYS
 # github key
 export SSH_KEY_PATH="~/.ssh/github"
 
 # ALIASES
- alias zshconfig="mate ~/.zshrc"
-# PERSONAL ALIASES
- alias ohmyzsh="mate ~/.oh-my-zsh"
+ alias zshconfig="nvim ~/.zshrc"
+ alias open="xdg-open"
 
+# FZF CONFIG
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
