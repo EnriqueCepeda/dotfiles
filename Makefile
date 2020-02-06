@@ -20,7 +20,5 @@ python:
 
 git:
 	sudo apt-get install git
-	git config --global user.email ecepedavillamayor@gmail.com
-	git config --global user.name "Enrique Cepeda"
 
 
