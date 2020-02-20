@@ -14,17 +14,13 @@ source `which virtualenvwrapper.sh`
 #THEME
 ZSH_THEME="af-magic"
 
-# Uncomment the following line to disable bi-weekly auto-update checks.
-# DISABLE_AUTO_UPDATE="true"
 
-# Uncomment the following line to change how often to auto-update (in days).
- export UPDATE_ZSH_DAYS=7
+export UPDATE_ZSH_DAYS=7
 
-# Uncomment the following line to display red dots whilst waiting for completion.
 COMPLETION_WAITING_DOTS="true"
 
 #PLUGINS
-plugins=(gitignore git z virtualenvwrapper virtualenv ubuntu sudo python zsh-syntax-highlighting)
+plugins=(gitignore git z virtualenvwrapper virtualenv ubuntu sudo python zsh-syntax-highlighting vscode alias-finder command-not-found)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -41,3 +37,7 @@ export SSH_KEY_PATH="~/.ssh/github"
 
 # FZF CONFIG
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+export CLASSPATH="$CLASSPATH:/usr/share/java/cup.jar:/usr/share/java/jflex.jar"
+
+

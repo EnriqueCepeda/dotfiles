@@ -19,8 +19,9 @@ python:
 	sudo pip3 install virtualenvwrapper
 
 git:
+	#CONFIGURE VARIABLES GIT_USER AND GIT_MAIL BEFORE
 	sudo apt-get install git
-	git config --global user.email ecepedavillamayor@gmail.com
-	git config --global user.name "Enrique Cepeda"
+	git config --global user.email $(GIT_MAIL)
+	git config --global user.name $(GIT_NAME)
 
 
