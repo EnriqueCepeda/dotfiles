@@ -14,7 +14,6 @@ source `which virtualenvwrapper.sh`
 #THEME
 ZSH_THEME="af-magic"
 
-
 export UPDATE_ZSH_DAYS=7
 
 COMPLETION_WAITING_DOTS="true"
@@ -34,6 +33,7 @@ export SSH_KEY_PATH="~/.ssh/github"
 # ALIASES
  alias zshconfig="nvim ~/.zshrc"
  alias open="xdg-open"
+ alias uclmvpn="sudo openconnect --protocol=gp portal.vpn.uclm.es"
 
 # FZF CONFIG
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

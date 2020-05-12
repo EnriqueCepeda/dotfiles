@@ -1,3 +1,5 @@
+SHELL := /bin/zsh
+
 zsh: git oh-my-zsh zsh-extra-plugins restart-zsh-config
 
 oh-my-zsh: 
@@ -14,6 +16,7 @@ zsh-extra-plugins:
 	~/.fzf/install
 restart-zsh-config:
 	cp ~/dotfiles/.zshrc ~/.zshrc
+	source ~/.zshrc
 python:
 	sudo apt-get install python3-pip git python3.7
 	sudo pip3 install virtualenvwrapper
@@ -23,5 +26,6 @@ git:
 	sudo apt-get install git
 	git config --global user.email $(GIT_MAIL)
 	git config --global user.name $(GIT_NAME)
+	echo "Remember to set GIT_MAIL and GIT_MAIL enviroment variables before executing it"
 
 
