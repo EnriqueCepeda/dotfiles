@@ -1,0 +1,4 @@
+# Edit this file to introduce tasks to be run by cron.
+
+@reboot rclone sync --delete-after --no-update-modtime --progress /home/enrique/Calibre\ Library one-drive-alu:/Calibre\ Library/
+@reboot rclone sync --delete-after --no-update-modtime --progress /home/enrique/OneDrive/UNIVERSIDAD one-drive-alu:/UNIVERSIDAD && rclone sync --delete-after --no-update-modtime --progress one-drive-alu:/UNIVERSIDAD /home/enrique/OneDrive/UNIVERSIDAD 
