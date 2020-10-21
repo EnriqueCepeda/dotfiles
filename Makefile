@@ -1,5 +1,3 @@
-SHELL := /bin/zsh
-
 zsh: git oh-my-zsh zsh-extra-plugins restart-zsh-config
 
 oh-my-zsh: 
@@ -8,9 +6,10 @@ oh-my-zsh:
 	git clone "https://github.com/robbyrussell/oh-my-zsh.git" ~/.oh-my-zsh
 	cp ~/dotfiles/.zshrc ~/.zshrc
 	chsh -s $(which zsh)
+	echo "REMEMBER TO LOG OUT FROM YOUR ACTUAL SESSION"
 zsh-extra-plugins:
 	#zsh-syntax-highlighting
-	git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $(ZSH)/plugins/zsh-syntax-highlighting
+	git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $HOME/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
 	#z tabulator
 	git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 	~/.fzf/install
@@ -19,14 +18,8 @@ restart-zsh-config:
 	source ~/.zshrc
 python:
 	sudo apt-get install python3-pip git python3
-	sudo pip3 install virtualenvwrapper
+	sudo pip3 install virtualenv virtualenvwrapper
 
-git:
-	#CONFIGURE VARIABLES GIT_USER AND GIT_MAIL BEFORE
-	sudo apt-get install git
-	git config --global user.email $(GIT_MAIL)
-	git config --global user.name $(GIT_NAME)
-	echo "Remember to set GIT_MAIL and GIT_MAIL enviroment variables before executing it"
 configure-display:
 	#Configuration works in ubuntu 19.10
 	sudo apt-get install ddcutil
