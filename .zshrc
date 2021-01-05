@@ -33,7 +33,7 @@ alias open="xdg-open"
 alias uclmvpn="sudo openconnect --protocol=gp portal.vpn.uclm.es"
 
 # PERSONAL ENVIRONMENT VARIABLES
-source ~/.env.zsh
+source ~/dotfiles/personal-dotfiles/.env.zsh
 
 # PRIVATE KEYS
-source ~/.keys.zsh
+source ~/dotfiles/personal-dotfiles/.keys.zsh
