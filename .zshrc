@@ -14,17 +14,17 @@ source `which virtualenvwrapper.sh`
 
 #THEME
 ZSH_THEME="spaceship"
+source /usr/share/powerline/bindings/zsh/powerline.zsh
 
 export UPDATE_ZSH_DAYS=7
-
 COMPLETION_WAITING_DOTS="true"
 
 #PLUGINS
 
 
-plugins=(gitignore git z virtualenvwrapper virtualenv ubuntu sudo python
-	zsh-syntax-highlighting vscode alias-finder command-not-found
-	zsh-autosuggestions colored-man-pages web-search tmux)
+plugins=(gitignore git z virtualenvwrapper virtualenv ubuntu sudo python 
+	zsh-syntax-highlighting vscode alias-finder command-not-found 
+	zsh-autosuggestions colored-man-pages web-search tmux timer)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -32,12 +32,16 @@ export ZSH_ALIAS_FINDER_AUTOMATIC="true"
 
 # SSH KEYS
 export SSH_KEY_PATH="~/.ssh/github"
+***REMOVED***
 
 
 # ALIASES
- alias zshconfig="nvim ~/.zshrc"
- alias open="xdg-open"
- alias uclmvpn="sudo openconnect --protocol=gp portal.vpn.uclm.es"
+alias zshconfig="nvim ~/.zshrc"
+alias open="xdg-open"
+alias uclmvpn="sudo openconnect --protocol=gp portal.vpn.uclm.es"
+alias antlr4='java -jar /usr/local/lib/antlr-4.9-complete.jar'
+alias grun='java org.antlr.v4.gui.TestRig'
+
 
 # FZF CONFIG
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
@@ -48,6 +52,11 @@ export CLASSPATH="$CLASSPATH:$HOME/OneDrive/UNIVERSIDAD/CUARTO/MULTIAGENTES/jade
 #############  SPARK CONFIGURATION ##################
 export SPARK_HOME="/opt/spark"
 export PATH="$PATH:$SPARK_HOME/bin"
-
+export PYSPARK_PYTHON=python3
 ############  JFLEX & CUP CONFIGURATION ################
 export CLASSPATH="$CLASSPATH:/usr/share/java/cup.jar:/usr/share/java/jflex-1.7.0.jar"
+
+
+############  ANTLR4 CONFIGURATION #####################
+export CLASSPATH="$CLASSPATH:/usr/local/lib/antlr-4.9-complete.jar"
+
