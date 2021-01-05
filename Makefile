@@ -4,6 +4,8 @@ bootstrap: folders python zsh
 folders:
 	mkdir ~/tools
 	mkdir ~/projects
+	touch ~/.env.zsh
+	touch ~/.keys.zsh
 
 zsh: oh-my-zsh zsh-extra-plugins zsh-theme restart-zsh-config
 
