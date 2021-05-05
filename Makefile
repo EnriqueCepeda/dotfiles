@@ -35,7 +35,7 @@ zsh-theme:
 
 restart-zsh-config:
 	cp ~/dotfiles/.zshrc ~/.zshrc
-	source ~/.zshrc
+	zsh ~/.zshrc
 python:
 	apt-get install python3-pip python3
 	pip3 install virtualenvwrapper

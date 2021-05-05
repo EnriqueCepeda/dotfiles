@@ -3,12 +3,11 @@ export ZSH="$HOME/.oh-my-zsh"
 export UPDATE_ZSH_DAYS=7
 COMPLETION_WAITING_DOTS="true"
 
-
 ############### VIRTUALENVWRAPPER CONFIGURATION ##################
-# default location of virtual environment directories
+# Default location of virtual environment directories
 export  workon_home=$HOME/.virtualenvs
 
-# default python version to use with virtualenv
+# Default python version to use with virtualenv
 export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
 export VIRTUALENVWRAPPER_VIRTUALENV_ARGS=' -p /usr/bin/python3 '
 export PROJECT_HOME="$HOME/projects"
@@ -23,9 +22,9 @@ plugins=(gitignore git z virtualenvwrapper virtualenv ubuntu sudo python
 	zsh-syntax-highlighting vscode alias-finder command-not-found 
 	zsh-autosuggestions colored-man-pages web-search tmux timer)
 
+export ZSH_ALIAS_FINDER_AUTOMATIC=true
+export ZSH_TMUX_AUTOSTART=true
 source $ZSH/oh-my-zsh.sh
-export ZSH_ALIAS_FINDER_AUTOMATIC="true"
-
 
 # ALIASES
 alias zshconfig="nvim ~/.zshrc"
