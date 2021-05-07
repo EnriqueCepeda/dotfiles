@@ -30,7 +30,7 @@ zsh-theme:
 	ln -s "$(ZSH_CUSTOM)/themes/spaceship-prompt/spaceship.zsh-theme" "$(ZSH_CUSTOM)/themes/spaceship.zsh-theme"
 	apt install powerline
 	git clone https://github.com/powerline/fonts.git ~/tools/fonts
-	sh ./tools/install.sh
+	source ~/tools/fonts/install.sh
 
 restart-zsh-config:
 	cp ~/dotfiles/.zshrc ~/.zshrc
