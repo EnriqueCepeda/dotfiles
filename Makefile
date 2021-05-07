@@ -1,4 +1,3 @@
-
 bootstrap: folders python zsh
 
 folders:
@@ -10,7 +9,7 @@ folders:
 zsh: oh-my-zsh zsh-extra-plugins zsh-theme restart-zsh-config
 
 oh-my-zsh:
-	apt-get install zsh
+	apt-get install zsh tmux tmuxinator
 	#oh-my-zsh
 	git clone "https://github.com/robbyrussell/oh-my-zsh.git" ~/.oh-my-zsh
 	cp ~/dotfiles/.zshrc ~/.zshrc
@@ -36,6 +35,7 @@ zsh-theme:
 restart-zsh-config:
 	cp ~/dotfiles/.zshrc ~/.zshrc
 	zsh ~/.zshrc
+
 python:
 	apt-get install python3-pip python3
 	pip3 install virtualenvwrapper
