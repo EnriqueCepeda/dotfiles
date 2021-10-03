@@ -1,6 +1,6 @@
 #!/bin/sh
 
-mkdir $(HOME)/tools
+mkdir ~/tools
 mkdir ~/projects
 touch ~/.env.zsh
 touch ~/.keys.zsh

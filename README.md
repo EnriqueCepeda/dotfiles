@@ -17,19 +17,19 @@ It uses [Space promptship](https://github.com/denysdovhan/spaceship-prompt) as m
 For basic tools installation run
 
 ```sh
-   make basic
+   source basic-bootstrap.sh
 ```
 
 For oh-my-zsh installation run
 
-```zsh
-   make oh-my-zsh
+```sh
+   source oh-my-zsh.sh
 ```
 
 For configuration restart run
 
-```zsh
-  make restart-config
+```sh
+  source restart-config.sh
 ```
 
 
