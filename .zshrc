@@ -23,14 +23,12 @@ plugins=(gitignore git z virtualenvwrapper virtualenv ubuntu sudo python
 	zsh-autosuggestions colored-man-pages web-search tmux timer)
 
 export ZSH_ALIAS_FINDER_AUTOMATIC=true
-export ZSH_TMUX_AUTOSTART=true
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 source $ZSH/oh-my-zsh.sh
 
 # ALIASES
 alias zshconfig="nvim ~/.zshrc"
 alias open="xdg-open"
-alias uclmvpn="sudo openconnect --protocol=gp portal.vpn.uclm.es"
 
 # PERSONAL ENVIRONMENT VARIABLES
 source ~/.env.zsh
