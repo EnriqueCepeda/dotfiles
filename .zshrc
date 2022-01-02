@@ -5,7 +5,7 @@ COMPLETION_WAITING_DOTS="true"
 
 ############### VIRTUALENVWRAPPER CONFIGURATION ##################
 # Default location of virtual environment directories
-export  workon_home=$HOME/.virtualenvs
+export workon_home=$HOME/.virtualenvs
 
 # Default python version to use with virtualenv
 export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3

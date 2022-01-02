@@ -14,6 +14,12 @@ It uses [Space promptship](https://github.com/denysdovhan/spaceship-prompt) as m
 
 ## Execution
 
+To install the basic tools of this setup along with oh-my-zsh run
+
+```sh
+   make bootstrap
+```
+
 For basic tools installation run
 
 ```sh

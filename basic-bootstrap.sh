@@ -5,9 +5,8 @@ mkdir ~/projects
 touch ~/.env.zsh
 touch ~/.keys.zsh
 
-sudo apt install zsh tmux tmuxinator
-chsh -s $(which zsh)
-sudo apt install python3-pip python3
-pip3 install virtualenvwrapper
+chmod +x ./basic-bootstrap.sh ./oh-my-zsh.sh ./restart-config.sh ./.zshrc ~/.env.zsh ~/.keys.zsh
 
-gnome-session-quit
+sudo apt install zsh tmux tmuxinator python3-pip python3
+pip3 install virtualenvwrapper
+chsh -s $(which zsh)
