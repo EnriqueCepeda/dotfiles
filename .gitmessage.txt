@@ -1,0 +1,15 @@
+<type>(optional scope): <short description below 50 chars>
+
+#[optional body]
+
+#[optional footer(s)]
+
+#This template follows conventional commits 
+#https://www.conventionalcommits.org/en/v1.0.0/
+
+#basic-types: fix, feat, build, chore, ci, docs, style, refactor, perf, test
+#fix correlates with PATCH in semantic versioning 1.0.X+1
+#feat correlates with MINOR in semantic versioning 1.X+1.0
+
+#A commit that has a footer with BREAKING CHANGE or appends a ! after type/scope correlates
+#with MAJOR in semantic versioning X+1.0.0
