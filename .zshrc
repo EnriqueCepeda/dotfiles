@@ -3,22 +3,11 @@ export ZSH="$HOME/.oh-my-zsh"
 export UPDATE_ZSH_DAYS=7
 COMPLETION_WAITING_DOTS="true"
 
-############### VIRTUALENVWRAPPER CONFIGURATION ##################
-# Default location of virtual environment directories
-export workon_home=$HOME/.virtualenvs
-
-# Default python version to use with virtualenv
-export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
-export VIRTUALENVWRAPPER_VIRTUALENV_ARGS=' -p /usr/bin/python3 '
-export PROJECT_HOME="$HOME/projects"
-source `which virtualenvwrapper.sh`
-
 #THEME
 ZSH_THEME="spaceship"
-source /usr/share/powerline/bindings/zsh/powerline.zsh
 
 #PLUGINS
-plugins=(gitignore git z virtualenvwrapper virtualenv ubuntu sudo python 
+plugins=(gitignore git z virtualenv ubuntu sudo python 
 	zsh-syntax-highlighting vscode alias-finder command-not-found 
 	zsh-autosuggestions colored-man-pages web-search tmux timer)
 

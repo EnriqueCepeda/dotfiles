@@ -1,5 +1,8 @@
 #!/bin/zsh
 
+source ~/dotfiles/helpers.sh
+set_package_manager_env_var
+
 #oh-my-zsh
 git clone "git@github.com:ohmyzsh/ohmyzsh.git" ~/.oh-my-zsh
 
@@ -27,11 +30,9 @@ spaceship_prompt_folder=$ZSH_CUSTOM/themes/spaceship-prompt
 mkdir $spaceship_prompt_folder
 git clone "git@github.com:denysdovhan/spaceship-prompt.git" $spaceship_prompt_folder
 ln -s $spaceship_prompt_folder/spaceship.zsh-theme $ZSH_CUSTOM/themes/spaceship.zsh-theme
-sudo apt install powerline
 git clone "git@github.com:powerline/fonts.git" ~/tools/fonts
 chmod +x ~/tools/fonts/install.sh
 ~/tools/fonts/install.sh
 
 cp ~/dotfiles/.zshrc ~/.zshrc
 chmod +x ~/.zshrc
-gnome-session-quit --logout

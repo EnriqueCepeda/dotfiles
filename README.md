@@ -1,6 +1,6 @@
 # My dotfiles
 
-These are my dotfiles for debian-based distributions, which uses [Oh my zsh](https://github.com/robbyrussell/oh-my-zsh/) as a shell framework
+These are my dotfiles for debian-based distributions and Mac OS, which uses [Oh my zsh](https://github.com/robbyrussell/oh-my-zsh/) as a shell framework
 
 It also uses the following plugins
 
@@ -11,6 +11,7 @@ It also uses the following plugins
 | [Z tabulator](https://github.com/junegunn/fzf) |
 
 It uses [Space promptship](https://github.com/denysdovhan/spaceship-prompt) as main theme
+(If you use it on Mac OS, check out this [problem](https://github.com/powerline/fonts/issues/248#issuecomment-350831564) with fonts
 
 ## Execution
 
