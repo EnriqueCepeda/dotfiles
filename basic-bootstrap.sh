@@ -11,6 +11,5 @@ cp ~/dotfiles/.gitmessage.txt ~/
 
 chmod +x ./basic-bootstrap.sh ./oh-my-zsh.sh ./restart-config.sh ./.zshrc ~/.env.zsh ~/.keys.zsh
 
-$PACKAGE_MANAGER install zsh tmux tmuxinator python3
-python3 -m pip install pipenv
+$PACKAGE_MANAGER install zsh tmux tmuxinator 
 chsh -s $(which zsh)

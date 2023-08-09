@@ -33,6 +33,12 @@ For oh-my-zsh installation run
    source oh-my-zsh.sh
 ```
 
+For python installation run
+
+```sh
+   source python.sh
+```
+
 For configuration restart run
 
 ```sh
