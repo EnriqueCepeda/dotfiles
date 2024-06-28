@@ -21,28 +21,20 @@ To install the basic tools of this setup along with oh-my-zsh run
    make bootstrap
 ```
 
-For basic tools installation run
-
-```sh
-   source basic-bootstrap.sh
-```
-
-For oh-my-zsh installation run
-
-```sh
-   source oh-my-zsh.sh
-```
-
 For python installation run
 
 ```sh
    source python.sh
 ```
 
-For configuration restart run
+For substituting local dotfiles with repo dotfiles run
 
 ```sh
-  source restart-config.sh
+  make restart-config
 ```
 
+For running pdf local editor run
 
+```sh
+  make pdf-editor
+```
